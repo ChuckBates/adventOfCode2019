@@ -2,10 +2,9 @@ import math
 import sys
 
 def function( input ):
-    sum = 0
-    return sum
+    return input
 
 if __name__ == "__main__":
-    input = [    ]
+    input = open("input.txt", "r").read().splitlines()
     print(function(input))
     

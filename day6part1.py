@@ -13,8 +13,8 @@ def function( input ):
         orbitalGraph.add_edge(bodies[0], bodies[1])
         bodiesSet.add(bodies[0])
         bodiesSet.add(bodies[1])
-    for body1 in bodiesSet:
-            sum += len(nx.algorithms.descendants(orbitalGraph, body1))
+    for body in bodiesSet:
+            sum += len(nx.algorithms.descendants(orbitalGraph, body))
     return sum
 
 if __name__ == "__main__":
